@@ -51,3 +51,11 @@ On Linux/Mac: `./morse_converter`
 ## Requirements
 
 Golang: Make sure Go is installed. Download it from golang.org.
+
+## Refrense
+
+[Wiki](https://en.wikipedia.org/wiki/Morse_code)
+
+[Picture](https://upload.wikimedia.org/wikipedia/commons/b/b5/International_Morse_Code.svg)
+
+[Decrypt](https://morsecodee.com/)
