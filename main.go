@@ -82,10 +82,10 @@ func main() {
 	finalIpMorse := strings.Join(ipMorseList, "\n")
 
 	// Save output to file
-	fmt.Println("\nSimpan hasil ke file: output.txt")
+	fmt.Println("\nSave the results to file: output.txt")
 	file, err := os.Create("output.txt")
 	if err != nil {
-		fmt.Println("Gagal membuat file:", err)
+		fmt.Println("Failed to create file:", err)
 		return
 	}
 	defer file.Close()
@@ -93,9 +93,9 @@ func main() {
 	// Write output to file
 	_, err = file.WriteString(morseOutput + "\n\n" + titleIp + "\n" + finalIpMorse)
 	if err != nil {
-		fmt.Println("Gagal menulis ke file:", err)
+		fmt.Println("Failed to write to file:", err)
 		return
 	}
 
-	fmt.Println("\nSelesai. Hasil telah disimpan ke output.txt.")
+	fmt.Println("\nDone. The results have been saved to output.txt.")
 }
